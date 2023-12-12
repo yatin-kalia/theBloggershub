@@ -59,7 +59,8 @@ export const deletePost=async(request,response)=>{
       if(!post){
         return response.status(404).json({msg:'post not found'}); 
       }
-      await Post.deleteOne();
+      await post.deleteOne();
+      
       return response.status(200).json({msg:'post deleted successfully'});
     }
     catch(error){

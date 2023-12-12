@@ -48,6 +48,7 @@ const Post=({post})=>{
             <Heading>{ addElipsis(post.title,20)}</Heading>
             <Text>{post.username}</Text>
             <Details>{addElipsis(post.description,100)}</Details>
+            
         </Container>
     )
 }
