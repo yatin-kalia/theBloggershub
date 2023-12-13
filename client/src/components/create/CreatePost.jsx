@@ -16,7 +16,7 @@ const Container=styled(Box)(({theme})=>({
 const Image=styled('img')({
 width:'100%',
 height:'50vh',
-objectFit:'cover'
+objectFit:'cover'   
 })
 
 const StyledFormControl=styled(FormControl)`
@@ -63,7 +63,7 @@ const CreatePost=()=>{
             const data=new FormData();
             data.append("name",file.name);
             data.append("file",file);
-            console.log(file);
+            // console.log(file);
 
             //Api Call
            const response=await API.uploadFile(data);

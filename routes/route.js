@@ -6,7 +6,7 @@ import upload from '../utils/upload.js';
 import { authenticateToken } from "../controller/jwt-controller.js";
 import { newComment,getComments,deleteComment } from "../controller/comment-controller.js";
  
-
+    
 const Router=express.Router();
 
 Router.post('/signup', signupUser);

@@ -123,9 +123,9 @@ const Login=({isUserAuthenticated})=>{
         :
 
          <Wrapper>
-        <TextField variant='standard' onChange={onInputChange} name='name' label='Enter Name'/>
-        <TextField variant='standard' onChange={onInputChange} name='username' label='Enter Username'/>
-        <TextField variant='standard' onChange={onInputChange} name='password' label='Enter  Password'/>
+        <TextField variant='standard' value={signup.name} onChange={onInputChange} name='name' label='Enter Name'/>
+        <TextField variant='standard' value={signup.username} onChange={onInputChange} name='username' label='Enter Username'/>
+        <TextField variant='standard' value={signup.password} onChange={onInputChange} name='password' label='Enter  Password'/>
         {error && <Error>{error}</Error>}
         <SignloginButton onClick={signupUser}>SignUp</SignloginButton>
         <Typography style={{textAlign:'center',color:'#878787'}}>OR</Typography>

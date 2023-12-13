@@ -50,7 +50,7 @@ const Categories=()=>{
                         <TableCell>
                         <StyledLink to={`/?category=${category.type}`}>
                           {  category.type}
-                          </StyledLink>
+                              </StyledLink>
                         </TableCell>
                     </TableRow>
                     );

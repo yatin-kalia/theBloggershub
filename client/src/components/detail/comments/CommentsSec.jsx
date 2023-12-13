@@ -41,7 +41,7 @@ const CommentsSec=({post})=>{
 
     useEffect(()=>{
         const getData= async()=>{
-            const response=await API.getAllComments(post._id);
+            const response=await API.getAllComments(post._id);  
             if(response.isSuccess){
                 setComments(response.data);
             }
